@@ -59,7 +59,6 @@ class Tamu extends BaseController
 
     public function delete($id)
     {
-        // $room = $this->TypeKamarModel->find($id);
         $this->TamuModel->delete_tamu($id);
         session()->setFlashdata('sukses', 'Data Berhasil di Hapus !');
         return redirect()->to('/Tamu');
