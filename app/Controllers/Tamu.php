@@ -15,7 +15,7 @@ class Tamu extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Data Kamar | Hotels',
+            'title' => 'Data Tamu | Hotels',
             'Tamu' => $this->TamuModel->get_tamu(),
         ];
         return view('tamu/data', $data);
