@@ -30,7 +30,7 @@ class Reservation extends BaseController
 
     public function trans_checkin($id_kamar)
     {
-        $today = Time::now();
+        $today = Time::createFromDate();
         $data = [
             'title' => 'Transaction Reservation | Hotels',
             'Kamar_ID' => $this->KamarModel->get_kamar_id($id_kamar),
