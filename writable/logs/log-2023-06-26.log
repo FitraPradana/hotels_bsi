@@ -56,3 +56,4 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
 10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROGRAMMING\\HOTEL_BSI\\hotels_bsi\\public\\index.php')
+INFO - 2023-06-26 07:19:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
