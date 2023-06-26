@@ -117,7 +117,7 @@
 </main>
 
 <!-- START: Navbar-->
-<?= $this->include('Tamu/add_modal'); ?>
+<?= $this->include('tamu/add_modal'); ?>
 <!-- END: Navbar-->
 
 <?= $this->endSection(); ?>

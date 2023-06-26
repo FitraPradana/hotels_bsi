@@ -30,7 +30,7 @@
                         <li><a href="<?= base_url('Reservation'); ?>"><i class="icon-people"></i> Reservation</a></li>
                     <?php } ?>
                     <li><a href="<?= base_url('Checkin'); ?>"><i class="icon-people"></i> Check In</a></li>
-                    <li><a href="<?= base_url('CheckOut'); ?>"><i class="icon-people"></i> Check Out</a></li>
+                    <li><a href="<?= base_url('Checkout'); ?>"><i class="icon-people"></i> Check Out</a></li>
                 </ul>
             </li>
             <!-- <li class="dropdown"><a href="#"><i class="icon-doc mr-1"></i> Pages</a>
