@@ -19,7 +19,7 @@ class Checkout extends BaseController
 
     public function index()
     {
-        $today = Time::createFromDate();
+        $today = Time::now();
         $data = [
             'title' => 'Data Check Out | Hotels',
             'CheckOut' => $this->CheckOutModel->get_checkout(),
@@ -30,10 +30,18 @@ class Checkout extends BaseController
 
     public function trans_checkout($id)
     {
-        $today = Time::createFromDate();
+        $today = Time::now();
 
         $findCheckin = $this->CheckInModel->find($id);
         //
+        // CheckIn
+        $data = array(
+            'status'                  => 'CHECKOUT',
+        );
+        $this->CheckInModel->update_checkin($data, $id);
+
+
+        // CheckOut
         $data = array(
             'tgl_checkout'                      => $today,
             'id_checkin'                        => $id,

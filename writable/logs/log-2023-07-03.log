@@ -1,0 +1,243 @@
+INFO - 2023-07-03 14:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 14:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 14:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 14:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 14:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 14:59:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:00:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:00:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:00:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:00:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-03 15:00:39 --> Attempt to read property "level" on null
+in APPPATH\Views\layout\navbar.php on line 16.
+ 1 APPPATH\Views\layout\navbar.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "level" on null', 'D:\\PROGRAMMING\\HOTEL_BSI\\hotels_bsi\\app\\Views\\layout\\navbar.php', 16)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\PROGRAMMING\\HOTEL_BSI\\hotels_bsi\\app\\Views\\layout\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('layout/navbar', null, true)
+ 5 APPPATH\Views\layout\main.php(133): CodeIgniter\View\View->include('layout/navbar')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\PROGRAMMING\\HOTEL_BSI\\hotels_bsi\\app\\Views\\layout\\main.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 9 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('user/data_user', [], true)
+10 APPPATH\Controllers\User.php(25): view('user/data_user', [...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->index()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROGRAMMING\\HOTEL_BSI\\hotels_bsi\\public\\index.php')
+INFO - 2023-07-03 15:00:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:00:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-03 15:00:51 --> Attempt to read property "level" on null
+in APPPATH\Controllers\Home.php on line 32.
+ 1 APPPATH\Controllers\Home.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "level" on null', 'D:\\PROGRAMMING\\HOTEL_BSI\\hotels_bsi\\app\\Controllers\\Home.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROGRAMMING\\HOTEL_BSI\\hotels_bsi\\public\\index.php')
+INFO - 2023-07-03 15:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-03 15:00:55 --> Attempt to read property "level" on null
+in APPPATH\Controllers\Home.php on line 32.
+ 1 APPPATH\Controllers\Home.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "level" on null', 'D:\\PROGRAMMING\\HOTEL_BSI\\hotels_bsi\\app\\Controllers\\Home.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROGRAMMING\\HOTEL_BSI\\hotels_bsi\\public\\index.php')
+INFO - 2023-07-03 15:01:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:01:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:03:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:04:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-03 15:04:30 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`hotels_bsi`.`kamar`, CONSTRAINT `kamar_ibfk_1` FOREIGN KEY (`id_type_kamar`) REFERENCES `type_kamar` (`id_type_kamar`)) in D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `ty...', 0)
+#1 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ty...')
+#2 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ty...')
+#3 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ty...', Array, false)
+#4 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\app\Models\TypeKamarModel.php(44): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\app\Controllers\TypeKamar.php(53): App\Models\TypeKamarModel->delete_type_kamar('3')
+#6 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\CodeIgniter.php(932): App\Controllers\TypeKamar->delete('3')
+#7 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TypeKamar))
+#8 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Commands\Server\rewrite.php(47): require_once('D:\\PROGRAMMING\\...')
+#11 {main}
+CRITICAL - 2023-07-03 15:04:30 --> Cannot delete or update a parent row: a foreign key constraint fails (`hotels_bsi`.`kamar`, CONSTRAINT `kamar_ibfk_1` FOREIGN KEY (`id_type_kamar`) REFERENCES `type_kamar` (`id_type_kamar`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `type_kamar`
+WHERE `id_type_kamar` = \'3\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `type_kamar`
+WHERE `id_type_kamar` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `type_kamar`
+WHERE `id_type_kamar` = \'3\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `type_kamar`
+WHERE `id_type_kamar` = :id_type_kamar:', [...], false)
+ 5 APPPATH\Models\TypeKamarModel.php(44): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\TypeKamar.php(53): App\Models\TypeKamarModel->delete_type_kamar('3')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TypeKamar->delete('3')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TypeKamar))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROGRAMMING\\HOTEL_BSI\\hotels_bsi\\public\\index.php')
+INFO - 2023-07-03 15:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:05:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:05:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:06:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:07:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:08:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:08:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-03 15:10:36 --> mysqli_sql_exception: Unknown column 'status' in 'field list' in D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ch...', 0)
+#1 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ch...')
+#2 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ch...')
+#3 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ch...', Array, false)
+#4 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\app\Models\CheckOutModel.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\app\Controllers\Checkout.php(41): App\Models\CheckOutModel->insert_checkout(Array)
+#6 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\CodeIgniter.php(932): App\Controllers\Checkout->trans_checkout('7')
+#7 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+#8 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Commands\Server\rewrite.php(47): require_once('D:\\PROGRAMMING\\...')
+#11 {main}
+CRITICAL - 2023-07-03 15:10:36 --> Unknown column 'status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `checkout` (`status`) VALUES (\'CHECKOUT\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `checkout` (`status`) VALUES (\'CHECKOUT\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `checkout` (`status`) VALUES (\'CHECKOUT\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `checkout` (`status`) VALUES (:status:)', [...], false)
+ 5 APPPATH\Models\CheckOutModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Checkout.php(41): App\Models\CheckOutModel->insert_checkout([...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Checkout->trans_checkout('7')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROGRAMMING\\HOTEL_BSI\\hotels_bsi\\public\\index.php')
+CRITICAL - 2023-07-03 15:12:02 --> Call to undefined method App\Models\CheckInModel::insert_checkout
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Checkout.php(41): CodeIgniter\Model->__call('insert_checkout', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Checkout->trans_checkout('7')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROGRAMMING\\HOTEL_BSI\\hotels_bsi\\public\\index.php')
+INFO - 2023-07-03 15:12:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:12:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:12:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:13:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:13:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:17:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:17:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:17:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:18:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:19:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:22:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:26:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:27:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:27:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:28:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-03 15:28:19 --> Too few arguments to function App\Controllers\Tamu::update(), 0 passed in D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Tamu.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Tamu->update()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tamu))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROGRAMMING\\HOTEL_BSI\\hotels_bsi\\public\\index.php')
+CRITICAL - 2023-07-03 15:29:11 --> Too few arguments to function App\Controllers\Tamu::update(), 0 passed in D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Tamu.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Tamu->update()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tamu))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROGRAMMING\\HOTEL_BSI\\hotels_bsi\\public\\index.php')
+CRITICAL - 2023-07-03 15:29:59 --> Too few arguments to function App\Controllers\Tamu::update(), 0 passed in D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Tamu.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Tamu->update()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tamu))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROGRAMMING\\HOTEL_BSI\\hotels_bsi\\public\\index.php')
+CRITICAL - 2023-07-03 15:30:37 --> Too few arguments to function App\Controllers\Tamu::update(), 0 passed in D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Tamu.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Tamu->update()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tamu))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROGRAMMING\\HOTEL_BSI\\hotels_bsi\\public\\index.php')
+INFO - 2023-07-03 15:31:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:32:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:33:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-03 15:34:39 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`hotels_bsi`.`kamar`, CONSTRAINT `kamar_ibfk_1` FOREIGN KEY (`id_type_kamar`) REFERENCES `type_kamar` (`id_type_kamar`)) in D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `ty...', 0)
+#1 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ty...')
+#2 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ty...')
+#3 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ty...', Array, false)
+#4 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\app\Models\TypeKamarModel.php(44): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\app\Controllers\TypeKamar.php(53): App\Models\TypeKamarModel->delete_type_kamar('1')
+#6 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\CodeIgniter.php(932): App\Controllers\TypeKamar->delete('1')
+#7 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TypeKamar))
+#8 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Commands\Server\rewrite.php(47): require_once('D:\\PROGRAMMING\\...')
+#11 {main}
+CRITICAL - 2023-07-03 15:34:39 --> Cannot delete or update a parent row: a foreign key constraint fails (`hotels_bsi`.`kamar`, CONSTRAINT `kamar_ibfk_1` FOREIGN KEY (`id_type_kamar`) REFERENCES `type_kamar` (`id_type_kamar`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `type_kamar`
+WHERE `id_type_kamar` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `type_kamar`
+WHERE `id_type_kamar` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `type_kamar`
+WHERE `id_type_kamar` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `type_kamar`
+WHERE `id_type_kamar` = :id_type_kamar:', [...], false)
+ 5 APPPATH\Models\TypeKamarModel.php(44): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\TypeKamar.php(53): App\Models\TypeKamarModel->delete_type_kamar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\TypeKamar->delete('1')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TypeKamar))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROGRAMMING\\HOTEL_BSI\\hotels_bsi\\public\\index.php')
+INFO - 2023-07-03 15:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:34:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:40:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:41:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:42:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

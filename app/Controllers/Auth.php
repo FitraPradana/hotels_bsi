@@ -66,7 +66,7 @@ class Auth extends BaseController
     {
 
         $data = [
-            'username'      => 'admin@gmail.com',
+            'username'      => 'Administrator',
             'email_user'    => 'admin@gmail.com',
             'password'      => password_hash('123', PASSWORD_BCRYPT),
             'level'         => 'ADMIN',
@@ -79,7 +79,7 @@ class Auth extends BaseController
     {
 
         $data = [
-            'username'      => 'user@gmail.com',
+            'username'      => 'User',
             'email_user'    => 'user@gmail.com',
             'password'      => password_hash('123', PASSWORD_BCRYPT),
             'level'         => 'USER',

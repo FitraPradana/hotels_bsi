@@ -42,7 +42,7 @@ class Tamu extends BaseController
     public function update($id)
     {
         $data = array(
-            'id_tamu'                   => $this->request->getPost('id_tamu'),
+            // 'id_tamu'                   => $this->request->getPost('id_tamu'),
             'jenis_identitas'           => $this->request->getPost('jenis_identitas'),
             'no_identitas'              => $this->request->getPost('no_identitas'),
             'nama_tamu'                 => $this->request->getPost('nama_tamu'),
@@ -59,8 +59,9 @@ class Tamu extends BaseController
 
     public function delete($id)
     {
+        $tamu = $this->TamuModel->find($id);
         $this->TamuModel->delete_tamu($id);
-        session()->setFlashdata('sukses', 'Data Berhasil di Hapus !');
+        session()->setFlashdata('sukses', 'Data <b>' . $tamu['nama_tamu'] . '</b> Berhasil di Hapus !');
         return redirect()->to('/Tamu');
     }
 }

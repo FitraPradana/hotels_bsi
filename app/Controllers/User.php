@@ -62,4 +62,12 @@ class User extends BaseController
         session()->setFlashdata('sukses', 'Data <b>' . $data['username'] . '</b> Berhasil di Update !');
         return redirect()->to('/User');
     }
+
+    public function delete($id)
+    {
+        // $room = $this->TypeKamarModel->find($id);
+        $this->UserModel->delete_User($id);
+        session()->setFlashdata('sukses', 'Data Berhasil di Hapus !');
+        return redirect()->to('/User');
+    }
 }

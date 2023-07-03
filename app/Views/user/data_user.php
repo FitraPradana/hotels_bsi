@@ -106,7 +106,7 @@
                                         </div>
                                         <div class="line-h-1 h5">
                                             <a class="text-success edit-contact" href="#" data-toggle="modal" data-target="#edituser<?= $value['id_user'] ?>"><i class="icon-pencil"></i></a>
-                                            <!-- <a class="text-danger delete-contact" href="#"><i class="icon-trash"></i></a> -->
+                                            <a class="text-danger delete-contact" href="#"><i class="icon-trash" data-toggle="modal" data-target="#modalDelete<?= $value['id_user'] ?>" data-original-title="Delete"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -122,6 +122,10 @@
     <!-- END: Card DATA-->
     </div>
 </main>
+
+<!-- DELETE MODAL -->
+<?= $this->include('user/modal_delete'); ?>
+<!-- END: DELETE MODAL-->
 
 
 <?= $this->endSection(); ?>

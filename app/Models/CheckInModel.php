@@ -28,6 +28,12 @@ class CheckInModel extends Model
         return $query;
     }
 
+    public function update_checkin($data, $id)
+    {
+        $query = $this->db->table('checkin')->update($data, array('id_checkin' => $id));
+        return $query;
+    }
+
     public function invoice()
     {
         $sql = "SELECT MAX(MID(invoice,4,4)) AS kode

@@ -110,4 +110,12 @@
 <?= $this->include('tamu/add_modal'); ?>
 <!-- END: Navbar-->
 
+<!-- UPDATE MODAL -->
+<?= $this->include('tamu/update_modal'); ?>
+<!-- END: UPDATE MODAL-->
+
+<!-- DELETE MODAL -->
+<?= $this->include('tamu/delete_modal'); ?>
+<!-- END: DELETE MODAL-->
+
 <?= $this->endSection(); ?>

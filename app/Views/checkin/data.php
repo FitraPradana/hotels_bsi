@@ -95,9 +95,17 @@
                                             <td><?= $value['jml_tamu_anak']; ?> Orang</td>
                                             <td><?= $value['remarks_checkin']; ?></td>
                                             <?php if (userLogin()->level == 'ADMIN') { ?>
-                                                <td align="center">
-                                                    <a class="btn btn-info btn-sm" href="<?= base_url('Checkout/trans_checkout/' . $value['id_checkin']) ?>"> Check Out <i class="icon-action-redo"></i></a>
-                                                </td>
+                                                <?php if ($value['status'] == 'CHECKIN') { ?>
+                                                    <td align="center">
+                                                        <a class="btn btn-info btn-sm" href="<?= base_url('Checkout/trans_checkout/' . $value['id_checkin']) ?>"> Check Out <i class="icon-action-redo"></i></a>
+                                                    </td>
+                                                <?php } else { ?>
+                                                    <td align="center">
+                                                        <button class="btn btn-success btn-sm" disabled>DONE</button>
+
+                                                    </td>
+
+                                                <?php } ?>
                                             <?php } ?>
                                         </tr>
                                     <?php } ?>

@@ -29,7 +29,7 @@
             <div class="col-12 mt-3">
                 <div class="card">
                     <div class="card-header  justify-content-between align-items-center">
-                        <h4 class="card-title">Kamar</h4>
+                        <!-- <h4 class="card-title">Kamar</h4> -->
                     </div>
                     <?php
                     if (!empty(session()->getFlashdata('sukses'))) { ?>
@@ -53,9 +53,9 @@
                     <?php } ?>
                     <div class="card-body d-md-flex text-center">
                         <ul class="d-md-flex m-0 pl-0 list-unstyled">
-                            <li class="py-1 px-2 mr-md-2 text-center my-1">
+                            <!-- <li class="py-1 px-2 mr-md-2 text-center my-1">
                                 <a href="#" class="btn btn-primary font-w-600 my-auto text-nowrap ml-auto add-event" data-toggle="modal" data-target="#add_kamar"><i class="icon-doc"></i> Tambah Kamar</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                     <div class="card-body">

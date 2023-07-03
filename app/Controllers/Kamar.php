@@ -41,7 +41,7 @@ class Kamar extends BaseController
     public function update($id)
     {
         $data = array(
-            'id_type_kamar'             => $this->request->getPost('id_type_kamar'),
+            // 'id_type_kamar'             => $this->request->getPost('id_type_kamar'),
             'kamar'                     => $this->request->getPost('kamar'),
             'max_dewasa'                => $this->request->getPost('max_dewasa'),
             'max_anak'                  => $this->request->getPost('max_anak'),

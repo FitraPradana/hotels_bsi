@@ -110,4 +110,12 @@
 <?= $this->include('kamar/add_modal'); ?>
 <!-- END: Navbar-->
 
+<!-- START: UPDATE-->
+<?= $this->include('kamar/update_modal'); ?>
+<!-- END: UPDATE-->
+
+<!-- START: DELETE-->
+<?= $this->include('kamar/delete_modal'); ?>
+<!-- END: DELETE-->
+
 <?= $this->endSection(); ?>
