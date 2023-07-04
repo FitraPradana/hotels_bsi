@@ -1,0 +1,174 @@
+INFO - 2023-07-04 11:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 11:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 11:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 11:50:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 11:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 11:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 11:50:59 --> Call to a member function insert_user() on null
+in APPPATH\Controllers\User.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->add()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROGRAMMING\\HOTEL_BSI\\hotels_bsi\\public\\index.php')
+ERROR - 2023-07-04 11:51:23 --> mysqli_sql_exception: Unknown column 'email' in 'field list' in D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\app\Models\UserModel.php(51): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\app\Controllers\User.php(42): App\Models\UserModel->insert_user(Array)
+#6 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\CodeIgniter.php(932): App\Controllers\User->add()
+#7 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Commands\Server\rewrite.php(47): require_once('D:\\PROGRAMMING\\...')
+#11 {main}
+CRITICAL - 2023-07-04 11:51:23 --> Unknown column 'email' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `user` (`username`, `email`, `address`, `phone`, `password_hash`, `roles`, `image`, `remarks_user`, `active`) VALUES (\'Rizky\', \'rizky@gmail.com\', \'BEKASI\', \'0912818\', \'$2y$10$OlvC0sNYIBvPHBuLbRR9xuKMesfKPIMt1A4zJgu4h5.vvk2TZ5gZa\', \'ADMIN\', \'default.png\', \'\', 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`username`, `email`, `address`, `phone`, `password_hash`, `roles`, `image`, `remarks_user`, `active`) VALUES (\'Rizky\', \'rizky@gmail.com\', \'BEKASI\', \'0912818\', \'$2y$10$OlvC0sNYIBvPHBuLbRR9xuKMesfKPIMt1A4zJgu4h5.vvk2TZ5gZa\', \'ADMIN\', \'default.png\', \'\', 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`username`, `email`, `address`, `phone`, `password_hash`, `roles`, `image`, `remarks_user`, `active`) VALUES (\'Rizky\', \'rizky@gmail.com\', \'BEKASI\', \'0912818\', \'$2y$10$OlvC0sNYIBvPHBuLbRR9xuKMesfKPIMt1A4zJgu4h5.vvk2TZ5gZa\', \'ADMIN\', \'default.png\', \'\', 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`username`, `email`, `address`, `phone`, `password_hash`, `roles`, `image`, `remarks_user`, `active`) VALUES (:username:, :email:, :address:, :phone:, :password_hash:, :roles:, :image:, :remarks_user:, :active:)', [...], false)
+ 5 APPPATH\Models\UserModel.php(51): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\User.php(42): App\Models\UserModel->insert_user([...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->add()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROGRAMMING\\HOTEL_BSI\\hotels_bsi\\public\\index.php')
+ERROR - 2023-07-04 11:52:25 --> mysqli_sql_exception: Unknown column 'password_hash' in 'field list' in D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\app\Models\UserModel.php(51): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\app\Controllers\User.php(42): App\Models\UserModel->insert_user(Array)
+#6 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\CodeIgniter.php(932): App\Controllers\User->add()
+#7 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Commands\Server\rewrite.php(47): require_once('D:\\PROGRAMMING\\...')
+#11 {main}
+CRITICAL - 2023-07-04 11:52:25 --> Unknown column 'password_hash' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `user` (`username`, `email_user`, `address`, `phone`, `password_hash`, `roles`, `image`, `remarks_user`, `active`) VALUES (\'Rizky\', \'rizky@gmail.com\', \'BEKASI\', \'0912818\', \'$2y$10$F7AT6xyIgo8OhJzY9GlXZOmeEljMbPOn0j/CQjHoMn.K92nUolZyu\', \'ADMIN\', \'default.png\', \'\', 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`username`, `email_user`, `address`, `phone`, `password_hash`, `roles`, `image`, `remarks_user`, `active`) VALUES (\'Rizky\', \'rizky@gmail.com\', \'BEKASI\', \'0912818\', \'$2y$10$F7AT6xyIgo8OhJzY9GlXZOmeEljMbPOn0j/CQjHoMn.K92nUolZyu\', \'ADMIN\', \'default.png\', \'\', 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`username`, `email_user`, `address`, `phone`, `password_hash`, `roles`, `image`, `remarks_user`, `active`) VALUES (\'Rizky\', \'rizky@gmail.com\', \'BEKASI\', \'0912818\', \'$2y$10$F7AT6xyIgo8OhJzY9GlXZOmeEljMbPOn0j/CQjHoMn.K92nUolZyu\', \'ADMIN\', \'default.png\', \'\', 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`username`, `email_user`, `address`, `phone`, `password_hash`, `roles`, `image`, `remarks_user`, `active`) VALUES (:username:, :email_user:, :address:, :phone:, :password_hash:, :roles:, :image:, :remarks_user:, :active:)', [...], false)
+ 5 APPPATH\Models\UserModel.php(51): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\User.php(42): App\Models\UserModel->insert_user([...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->add()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROGRAMMING\\HOTEL_BSI\\hotels_bsi\\public\\index.php')
+INFO - 2023-07-04 11:53:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 11:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-04 11:53:57 --> mysqli_sql_exception: Unknown column 'password_hash' in 'field list' in D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\app\Models\UserModel.php(51): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\app\Controllers\User.php(42): App\Models\UserModel->insert_user(Array)
+#6 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\CodeIgniter.php(932): App\Controllers\User->add()
+#7 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Commands\Server\rewrite.php(47): require_once('D:\\PROGRAMMING\\...')
+#11 {main}
+CRITICAL - 2023-07-04 11:53:57 --> Unknown column 'password_hash' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `user` (`username`, `email_user`, `address`, `phone`, `password_hash`, `roles`, `image`, `remarks_user`, `active`) VALUES (\'fijay\', \'admin@gmail.com\', \'BEKASI\', \'0912818\', \'$2y$10$KwVpc7cJXJdpDEf9cDFaCO8BMWjnHVDuvNFIc28HJbGIeNrp7x/pK\', \'ADMIN\', \'default.png\', \'\', 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`username`, `email_user`, `address`, `phone`, `password_hash`, `roles`, `image`, `remarks_user`, `active`) VALUES (\'fijay\', \'admin@gmail.com\', \'BEKASI\', \'0912818\', \'$2y$10$KwVpc7cJXJdpDEf9cDFaCO8BMWjnHVDuvNFIc28HJbGIeNrp7x/pK\', \'ADMIN\', \'default.png\', \'\', 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`username`, `email_user`, `address`, `phone`, `password_hash`, `roles`, `image`, `remarks_user`, `active`) VALUES (\'fijay\', \'admin@gmail.com\', \'BEKASI\', \'0912818\', \'$2y$10$KwVpc7cJXJdpDEf9cDFaCO8BMWjnHVDuvNFIc28HJbGIeNrp7x/pK\', \'ADMIN\', \'default.png\', \'\', 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`username`, `email_user`, `address`, `phone`, `password_hash`, `roles`, `image`, `remarks_user`, `active`) VALUES (:username:, :email_user:, :address:, :phone:, :password_hash:, :roles:, :image:, :remarks_user:, :active:)', [...], false)
+ 5 APPPATH\Models\UserModel.php(51): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\User.php(42): App\Models\UserModel->insert_user([...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->add()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROGRAMMING\\HOTEL_BSI\\hotels_bsi\\public\\index.php')
+ERROR - 2023-07-04 11:54:16 --> mysqli_sql_exception: Unknown column 'roles' in 'field list' in D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\app\Models\UserModel.php(51): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\app\Controllers\User.php(42): App\Models\UserModel->insert_user(Array)
+#6 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\CodeIgniter.php(932): App\Controllers\User->add()
+#7 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\PROGRAMMING\HOTEL_BSI\hotels_bsi\system\Commands\Server\rewrite.php(47): require_once('D:\\PROGRAMMING\\...')
+#11 {main}
+CRITICAL - 2023-07-04 11:54:16 --> Unknown column 'roles' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `user` (`username`, `email_user`, `address`, `phone`, `password`, `roles`, `image`, `remarks_user`, `active`) VALUES (\'fijay\', \'admin@gmail.com\', \'BEKASI\', \'0912818\', \'$2y$10$1oy4CWFy0eVc/gSfLUULhOu3gbDc66MtLUok/AfTlxa.XdxBmYB0y\', \'ADMIN\', \'default.png\', \'\', 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`username`, `email_user`, `address`, `phone`, `password`, `roles`, `image`, `remarks_user`, `active`) VALUES (\'fijay\', \'admin@gmail.com\', \'BEKASI\', \'0912818\', \'$2y$10$1oy4CWFy0eVc/gSfLUULhOu3gbDc66MtLUok/AfTlxa.XdxBmYB0y\', \'ADMIN\', \'default.png\', \'\', 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`username`, `email_user`, `address`, `phone`, `password`, `roles`, `image`, `remarks_user`, `active`) VALUES (\'fijay\', \'admin@gmail.com\', \'BEKASI\', \'0912818\', \'$2y$10$1oy4CWFy0eVc/gSfLUULhOu3gbDc66MtLUok/AfTlxa.XdxBmYB0y\', \'ADMIN\', \'default.png\', \'\', 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`username`, `email_user`, `address`, `phone`, `password`, `roles`, `image`, `remarks_user`, `active`) VALUES (:username:, :email_user:, :address:, :phone:, :password:, :roles:, :image:, :remarks_user:, :active:)', [...], false)
+ 5 APPPATH\Models\UserModel.php(51): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\User.php(42): App\Models\UserModel->insert_user([...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->add()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROGRAMMING\\HOTEL_BSI\\hotels_bsi\\public\\index.php')
+INFO - 2023-07-04 11:55:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 11:55:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 11:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 11:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 11:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:00:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:02:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:03:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:03:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:05:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:12:42 --> Undefined variable $id
+in APPPATH\Controllers\User.php on line 71.
+ 1 APPPATH\Controllers\User.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'D:\\PROGRAMMING\\HOTEL_BSI\\hotels_bsi\\app\\Controllers\\User.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->ubah_password('115')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROGRAMMING\\HOTEL_BSI\\hotels_bsi\\public\\index.php')
+INFO - 2023-07-04 12:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:13:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:13:09 --> Undefined array key "username"
+in APPPATH\Controllers\User.php on line 72.
+ 1 APPPATH\Controllers\User.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'D:\\PROGRAMMING\\HOTEL_BSI\\hotels_bsi\\app\\Controllers\\User.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\User->ubah_password('115')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROGRAMMING\\HOTEL_BSI\\hotels_bsi\\public\\index.php')
+INFO - 2023-07-04 12:13:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:13:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:14:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:14:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:15:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:16:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:18:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:19:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:19:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

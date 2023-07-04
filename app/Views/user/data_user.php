@@ -23,7 +23,26 @@
             </div>
         </div>
         <!-- END: Breadcrumbs-->
-
+        <?php
+        if (!empty(session()->getFlashdata('sukses'))) { ?>
+            <!-- code... -->
+            <br><br>
+            <div class="sweetalert m-t-30">
+                <div class="alert alert-success">
+                    <?php echo session()->getFlashdata('sukses') ?>
+                </div>
+            </div>
+        <?php } ?>
+        <?php
+        if (!empty(session()->getFlashdata('error'))) { ?>
+            <!-- code... -->
+            <br><br>
+            <div class="sweetalert m-t-30">
+                <div class="alert alert-danger">
+                    <?php echo session()->getFlashdata('error') ?>
+                </div>
+            </div>
+        <?php } ?>
         <!-- START: Card Data-->
         <div class="row row-eq-height">
             <div class="col-12 col-lg-2 mt-3 todo-menu-bar flip-menu pr-lg-0">
@@ -33,41 +52,8 @@
                         <a href="#" class="bg-primary py-2 px-2 rounded ml-auto text-white w-100 text-center" data-toggle="modal" data-target="#newuser">
                             <i class="icon-plus align-middle text-white"></i> <span class="d-none d-xl-inline-block">Add New User</span>
                         </a>
-                        <!-- Add User -->
-                        <?= $this->include('user/modal_add'); ?>
-
-                        <!-- Edit User -->
-                        <?= $this->include('user/modal_edit'); ?>
                     </div>
 
-                    <!-- <ul class="nav flex-column contact-menu">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#" data-contacttype="contact">
-                                <i class="icon-list"></i> All
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" data-contacttype="family-contact">
-                                <i class="icon-people"></i> Family
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" data-contacttype="friend-contact">
-                                <i class="icon-user-follow"></i> Friends
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" data-contacttype="office-contact">
-                                <i class="icon-check"></i> Office
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" data-contacttype="business-contact">
-                                <i class="icon-layers"></i> Business
-                            </a>
-                        </li>
-
-                    </ul> -->
 
                 </div>
             </div>
@@ -105,7 +91,8 @@
                                             <p class="user-phone"><?= $value['phone']; ?></p>
                                         </div>
                                         <div class="line-h-1 h5">
-                                            <a class="text-success edit-contact" href="#" data-toggle="modal" data-target="#edituser<?= $value['id_user'] ?>"><i class="icon-pencil"></i></a>
+                                            <a class="text-info delete-contact" href="#"><i class="icon-key" data-toggle="modal" data-target="#modalubahPassword<?= $value['id_user'] ?>" data-original-title="Delete"></i></a>
+                                            <a class="text-success edit-contact" href="#" data-toggle="modal" data-target="#modalEdit<?= $value['id_user'] ?>"><i class="icon-pencil"></i></a>
                                             <a class="text-danger delete-contact" href="#"><i class="icon-trash" data-toggle="modal" data-target="#modalDelete<?= $value['id_user'] ?>" data-original-title="Delete"></i></a>
                                         </div>
                                     </div>
@@ -122,6 +109,17 @@
     <!-- END: Card DATA-->
     </div>
 </main>
+
+<!-- Add User -->
+<?= $this->include('user/modal_add'); ?>
+
+<!-- UBAH PASSWORD MODAL -->
+<?= $this->include('user/modal_ubahPassword'); ?>
+<!-- END: UBAH PASSWORD MODAL-->
+
+<!-- UPDATE MODAL -->
+<?= $this->include('user/modal_edit'); ?>
+<!-- END: UPDATE MODAL-->
 
 <!-- DELETE MODAL -->
 <?= $this->include('user/modal_delete'); ?>

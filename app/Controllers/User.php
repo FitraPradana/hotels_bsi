@@ -25,41 +25,53 @@ class User extends BaseController
         return view('user/data_user', $data);
     }
 
-    // public function add()
-    // {
-    //     //
-    //     $data = array(
-    //         'username'          => $this->request->getPost('username'),
-    //         'email'             => $this->request->getPost('email_user'),
-    //         'address'           => $this->request->getPost('address'),
-    //         'phone'             => $this->request->getPost('phone'),
-    //         'password_hash'     => password_hash($this->request->getPost('password'), PASSWORD_BCRYPT),
-    //         'roles'             => $this->request->getPost('roles'),
-    //         'image'             => 'default.png',
-    //         'remarks_user'      => $this->request->getPost('remarks_user'),
-    //         'active'            => 1,
-    //     );
-    //     $this->UserCIModel->insert_user($data);
-    //     session()->setFlashdata('sukses', 'Data <b>' . $data['username'] . '</b> Berhasil di Simpan !');
-    //     return redirect()->to('/User');
-    // }
-
-    public function update()
+    public function add()
     {
         //
         $data = array(
-            'id'                => $this->request->getPost('id_user'),
             'username'          => $this->request->getPost('username'),
-            // 'email'             => $this->request->getPost('email_user'),
+            'email_user'        => $this->request->getPost('email_user'),
+            'password'          => password_hash($this->request->getPost('password'), PASSWORD_BCRYPT),
             'address'           => $this->request->getPost('address'),
             'phone'             => $this->request->getPost('phone'),
-            'roles'             => $this->request->getPost('roles'),
+            'level'             => $this->request->getPost('level'),
             'image'             => 'default.png',
-            'remarks_user'      => $this->request->getPost('remarks_user'),
-            'active'            => 1,
+            'ket_user'          => $this->request->getPost('remarks_user'),
+            // 'active'            => 1,
         );
-        $this->UserModel->update_User($data, $data['id']);
+        $this->UserModel->insert_user($data);
+        session()->setFlashdata('sukses', 'Data <b>' . $data['username'] . '</b> Berhasil di Simpan !');
+        return redirect()->to('/User');
+    }
+
+    public function update($id)
+    {
+        //
+        $data = array(
+            'username'          => $this->request->getPost('username'),
+            'email_user'        => $this->request->getPost('email_user'),
+            // 'password'          => password_hash($this->request->getPost('password'), PASSWORD_BCRYPT),
+            'address'           => $this->request->getPost('address'),
+            'phone'             => $this->request->getPost('phone'),
+            'level'             => $this->request->getPost('level'),
+            'image'             => 'default.png',
+            'ket_user'          => $this->request->getPost('remarks_user'),
+            // 'active'            => 1,
+        );
+        $this->UserModel->update_User($data, $id);
         session()->setFlashdata('sukses', 'Data <b>' . $data['username'] . '</b> Berhasil di Update !');
+        return redirect()->to('/User');
+    }
+
+    public function ubah_password($id)
+    {
+        $users = $this->UserModel->find($id);
+
+        $data = array(
+            'password'          => password_hash($this->request->getPost('password'), PASSWORD_BCRYPT),
+        );
+        $this->UserModel->update_User($data, $id);
+        session()->setFlashdata('sukses', 'Password <b>' . $users['username'] . '</b> Berhasil di Ubah !');
         return redirect()->to('/User');
     }
 

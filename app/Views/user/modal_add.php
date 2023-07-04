@@ -55,9 +55,9 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="contact-location">
-                                <label for="roles" class="col-form-label">Roles</label>
+                                <label for="level" class="col-form-label">Roles</label>
                                 <div class="d-flex">
-                                    <select class="form-control" id="roles" name="roles" style="width: 100%;" required>
+                                    <select class="form-control" id="level" name="level" style="width: 100%;" required>
                                         <option value="">Please select</option>
                                         <option value="ADMIN">Administrator</option>
                                         <option value="OWNER">Owner</option>
@@ -70,9 +70,9 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="contact-location">
-                                <label for="remarks_user" class="col-form-label">Remarks</label>
+                                <label for="ket_user" class="col-form-label">Remarks</label>
                                 <div class="d-flex">
-                                    <textarea id="remarks_user" name="remarks_user" rows="3" class="form-control"></textarea>
+                                    <textarea id="ket_user" name="ket_user" rows="3" class="form-control"></textarea>
                                 </div>
                             </div>
                         </div>
